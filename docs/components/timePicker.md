@@ -8,84 +8,42 @@ title: TimePicker
 
 ### 基础用法
 
-<template>
-    <div class='dome-wrap-time-picker'>
-        <p>基础用法</p>
-        <xly-time-picker
-            v-model="value"
-            :picker-options="{
-            selectableRange: '08:30:00 - 20:30:00'
-            }"
-            placeholder="任意时间点">
-        </xly-time-picker>
-        <p>选择时间范围</p>
-        <xly-time-picker
-            is-range
-            v-model="value1"
-            range-separator="至"
-            start-placeholder="开始时间"
-            end-placeholder="结束时间"
-            placeholder="选择时间范围">
-        </xly-time-picker>
-    </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-            value: '',
-            value1: ''
-        }
-    },
-    watch:{
-        value(val){
-        }
-    }
-}
-</script>
-<style>
-    .dome-wrap-time-picker{
-        
-    }
-</style>
-
 ### 使用
 
 ```vue
 <template>
-    <div>
-        <p>基础用法</p>
-        <xly-time-picker
-            v-model="value"
-            :picker-options="{
-                selectableRange: '08:30:00 - 20:30:00'
-            }"
-            placeholder="任意时间点"
-        >
-        </xly-time-picker>
+  <div>
+    <p>基础用法</p>
+    <xly-time-picker
+      v-model="value"
+      :picker-options="{
+        selectableRange: '08:30:00 - 20:30:00',
+      }"
+      placeholder="任意时间点"
+    >
+    </xly-time-picker>
 
-        <p>选择时间范围</p>
-        <xly-time-picker
-            is-range
-            v-model="value1"
-            range-separator="至"
-            start-placeholder="开始时间"
-            end-placeholder="结束时间"
-            placeholder="选择时间范围"
-        >
-        </xly-time-picker>
-    </div>
+    <p>选择时间范围</p>
+    <xly-time-picker
+      is-range
+      v-model="value1"
+      range-separator="至"
+      start-placeholder="开始时间"
+      end-placeholder="结束时间"
+      placeholder="选择时间范围"
+    >
+    </xly-time-picker>
+  </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-            value: '',
-            value1: ''
-        };
-    },
-    methods: {}
+  data() {
+    return {
+      value: "",
+      value1: "",
+    };
+  },
+  methods: {},
 };
 </script>
 ```

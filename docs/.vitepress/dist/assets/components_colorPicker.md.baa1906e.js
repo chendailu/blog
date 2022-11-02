@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t}from"./app.f313fdc2.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/colorPicker.md"}'),r={name:"components/colorPicker.md"};function c(a,n,s,p,i,_){return t(),o("div")}const l=e(r,[["render",c]]);export{d as __pageData,l as default};

@@ -2,43 +2,10 @@
 title: messageAlert
 pageClass: "xly-class"
 ---
+
 # 示例
 
 <br/>
-
-<template>
-<div style='overflow:hidden'>
-<h4>提示类</h4>
-    <xly-button style='margin-right:30px' @click='third("enquire")'>普通</xly-button>
-    <xly-button style='margin-right:30px' type='success' @click='third("success")'>成功</xly-button>
-    <xly-button style='margin-right:30px' type='warning' @click='third("warning")'>警告</xly-button>
-    <xly-button style='margin-right:30px' type='danger' @click='third("error")'>错误</xly-button>
-</div>
-</template> 
-
-<script>
-export default {
-    methods:{
-        third(val){
-            this.$messageAlert({
-                type:val,
-                msg:`${val}的消息`,
-                top:'30px',
-                timeOut:20,
-                align:'left',
-                icon:'xly_icon_loading_line',
-                outside:true
-            }).then(() => {
-                console.log('ok')
-            })
-            .catch(() => {
-                console.log('no'+val)
-            })
-        }
-    }
-}
-</script>
-
 ```vue
 <template>
 <div style='overflow:hidden'>
@@ -48,7 +15,7 @@ export default {
     <xly-button style='margin-right:30px' type='warning' @click='third("warning")'>警告</xly-button>
     <xly-button style='margin-right:30px' type='danger' @click='third("error")'>错误</xly-button>
 </div>
-</template> 
+</template>
 
 <script>
 export default {
@@ -71,6 +38,7 @@ export default {
     }
 }
 </script>
+
 ```
 
 # API
@@ -95,3 +63,4 @@ export default {
 | ------ | --------------- | ------ |
 | .then(() => {})  | 弹出时触发 | 无     |
 | .catch(() => {})  | 消失时触发 | 无     |
+```

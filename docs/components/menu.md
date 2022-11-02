@@ -58,50 +58,6 @@ title: Menu
 
 **基础用法--vertical（垂直）**
 
-<template>
-  <div style="width: 240px;border: 1px solid #eee;">
-        <xly-menu :indent="true" @on-select='seleclt' @on-open-change='seleclts'>
-            <xly-menuItem :itemObj='item' :name="item.id" v-for='item in list' :key='item.id'>{{item.name}}</xly-menuItem>
-            <xly-menuGroup title="菜单组1">
-                <xly-menuItem name="menu2">menu2</xly-menuItem>
-                <xly-menuItem name="menu3">menu3</xly-menuItem>
-            </xly-menuGroup>
-            <xly-subMenu name="展开菜单1" itemObj='items'>
-                <template slot="title">展开菜单1</template>
-                <xly-menuItem name="menu4">menu4</xly-menuItem>
-                <xly-menuItem name="menu5">menu5</xly-menuItem>
-                <xly-subMenu name="展开菜单2">
-                    <template slot="title">展开菜单2</template>
-                    <xly-menuGroup title="菜单组2">
-                        <xly-menuItem name="menu6">menu6</xly-menuItem>
-                        <xly-menuItem name="menu7">menu7</xly-menuItem>
-                    </xly-menuGroup>
-                </xly-subMenu>
-            </xly-subMenu>
-        </xly-menu>
-    </div>
-</template>
-
-<script>
-export default {
-    data(){
-        return {
-            list:[
-                {name:1,id:1},
-                {name:2,id:2}
-            ]
-        }
-    },
-    methods:{
-        seleclt(val,info){
-            console.log(val,info)
-        } ,
-        seleclts (val,info){
-            console.log(val,info)
-        } 
-    }
-}
-</script>
 ***使用***
 
 ```html
@@ -130,27 +86,6 @@ export default {
 
 **基础用法--horizontal（水平）**
 
-<template>
-  <div style="border: 1px solid #eee;">
-        <xly-menu :indent="true" mode="horizontal">
-            <xly-menuItem name="menu1">menu1</xly-menuItem>
-            <xly-menuItem name="menu2">menu2</xly-menuItem>
-            <xly-menuItem name="menu3">menu3</xly-menuItem>
-            <xly-subMenu name="展开菜单1">
-                <template slot="title">展开菜单1</template>
-                <xly-menuItem name="menu4">menu4</xly-menuItem>
-                <xly-menuItem name="menu5">menu5</xly-menuItem>
-                <xly-subMenu name="展开菜单2">
-                    <template slot="title">展开菜单2</template>
-                    <xly-menuGroup title="菜单组2">
-                        <xly-menuItem name="menu6">menu6</xly-menuItem>
-                        <xly-menuItem name="menu7">menu7</xly-menuItem>
-                    </xly-menuGroup>
-                </xly-subMenu>
-            </xly-subMenu>
-        </xly-menu>
-    </div>
-</template>
 
 ```html
 <template>

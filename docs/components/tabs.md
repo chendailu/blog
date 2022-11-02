@@ -39,68 +39,6 @@ title: Tabs
 # 示例
 
 ## 基础用法
-
-<script>
-export default {
-    name: 'tabs-doc',
-    data() {
-        return {
-            label: (h) => {
-                return h('span', [
-                    '标签3',
-                    h('i', {
-                        style: {
-                            width: '14px',
-                            height: '14px',
-                            display: 'inline-block'
-                        },
-                        class: 'iconfont xly_icon_Contacts_line'
-                    })
-                ])
-            }
-        };
-    }
-}
-</script>
-
-<style>
-    .tab-box {
-        width: 500px;
-        height: 200px;
-    }
-</style>
-
-<template>
-    <div>
-        <div class="tab-box">
-            <xly-tabs>
-                <xly-tabPane label="标签11" oddOrEven='odd'>标签1</xly-tabPane>
-                <xly-tabPane label="标签22" oddOrEven='even' icon="Commoncontact_line" color="#5cd8a8">标签2</xly-tabPane>
-                <xly-tabPane label="标签3">标签3</xly-tabPane>
-                <xly-tabPane label="标签4">标签4</xly-tabPane>
-                <xly-tabPane label="标签5">标签5</xly-tabPane>
-                <xly-tabPane label="标签6">标签6</xly-tabPane>
-                <xly-tabPane label="标签7">标签7</xly-tabPane>
-                <xly-tabPane label="标签8">标签8</xly-tabPane>
-                <xly-tabPane label="标签9">标签9</xly-tabPane>
-            </xly-tabs>
-        </div>
-        <div class="tab-box">
-            <xly-tabs type="card" :animated='false' :closable="true">
-                <xly-tabPane label="标签1" >标签1</xly-tabPane>
-                <xly-tabPane disabled  label="标签2">标签2</xly-tabPane>
-                <xly-tabPane  :label="label">标签3</xly-tabPane>
-                <xly-tabPane label="标签4">标签4</xly-tabPane>
-                <xly-tabPane label="标签5">标签5</xly-tabPane>
-                <xly-tabPane label="标签6">标签6</xly-tabPane>
-                <xly-tabPane label="标签7">标签7</xly-tabPane>
-                <xly-tabPane label="标签8">标签8</xly-tabPane>
-                <xly-tabPane label="标签9">标签9</xly-tabPane>
-            </xly-tabs>
-        </div>
-    </div>
-</template>
-
 ## 代码
 ```vue
 <script>

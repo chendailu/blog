@@ -2,92 +2,10 @@
 title: messageBox
 pageClass: "xly-class"
 ---
+
 # 示例
 
 <br/>
-
-<template>
-<div>
-    <h4>模态类</h4>
-    <p>确认弹框类</p>
-    <div style='overflow:hidden'>
-    <xly-button style='margin-right:30px' @click='first("enquire")'>询问</xly-button>
-    <xly-button style='margin-right:30px' type='success' @click='first("success")'>成功</xly-button>
-    <xly-button style='margin-right:30px' type='warning' @click='first("warning")'>警告</xly-button>
-    <xly-button style='margin-right:30px' type='danger' @click='first("error")'>错误</xly-button>
-    </div>
-    <br/>
-    <br/>
-    <h4>非模态类</h4>
-    <p>提示弹框类</p>
-    <div style='overflow:hidden'>
-    <xly-button style='margin-right:30px' @click='scend("enquire")'>询问</xly-button>
-    <xly-button style='margin-right:30px' type='success' @click='scend("success")'>成功</xly-button>
-    <xly-button style='margin-right:30px' type='warning' @click='scend("warning")'>警告</xly-button>
-    <xly-button style='margin-right:30px' type='danger' @click='scend("error")'>错误</xly-button>
-    </div>
-    
-</div>
-</template>
-
-<script>
-export default {
-    methods:{
-        first(val){
-            this.$messageAlert({
-                type:val,
-                msg:'成功的消息',
-                icon:'xly_icon_shutdown_line',
-                top:'30px',
-                timeOut:20,
-                align:'left',
-                outside:true
-            }).then(() => {
-                console.log('ok')
-            })
-            .catch(() => {
-                console.log('no'+val)
-            })
-            this.$messageBox({
-                    messageType:'modal',
-                    type:val,
-                    title:'工作已完成',
-                    msg:'一系列的信息描述，可能会很长。也可以是很短。同样也可以带标点',
-            }).then(() => {
-                
-            })
-            .catch(() => {
-                console.log('no'+val)
-            })
-            
-        },
-        scend(val){
-            this.$messageBox({
-                messageType:'nonmodal',
-                type:val,
-                title:'是否删除这条信息？',
-                msg:'删除之后不可恢复,请谨慎操作',
-                buttonText:{
-                    ok:'确认',
-                    no:'取消'
-                },
-                timeOut:5
-            }).then(() => {
-                console.log('ok')
-            })
-            .catch(() => {
-                console.log('no'+val)
-            })
-        },
-        third(val){
-            this.$messageAlert({
-
-            })
-        }
-    }
-}
-</script>
-
 ```vue
 <template>
 <div>
@@ -156,6 +74,7 @@ export default {
     }
 }
 </script>
+
 ```
 
 # API
@@ -178,3 +97,4 @@ export default {
 | ------ | --------------- | ------ |
 | .then(() => {})  | 确认时触发 | 无     |
 | .catch(() => {})  | 取消时触发 | 无     |
+```

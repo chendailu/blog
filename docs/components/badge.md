@@ -6,58 +6,30 @@ title: Badge
 
 ### 基础用法
 
-<template>
-    <div class='dome-wrap-badge'>
-        <p>基本用法<p>
-        <xly-badge value='new'>
-            <xly-button>详情</xly-button>
-        </xly-badge>
-        <p>数字用法</p>
-        <xly-badge :value='100' :max='99' type='warning'>
-            <xly-button>详情</xly-button>
-        </xly-badge>
-        <p>圆点用法</p>
-        <xly-badge isDot>
-            <xly-button>详情</xly-button>
-        </xly-badge>
-    </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-        }
-    },
-}
-</script>
-<style>
-</style>
-
 ### 使用
 
 ```vue
 <template>
-    <div class="dome-wrap-badge">
-        <p>基本用法</p>
-        <xly-badge value="new">
-            <xly-button>详情</xly-button>
-        </xly-badge>
-        <p>数字用法</p>
-        <xly-badge :value="100" :max="99" type="warning">
-            <xly-button>详情</xly-button>
-        </xly-badge>
-        <p>圆点用法</p>
-        <xly-badge isDot>
-            <xly-button>详情</xly-button>
-        </xly-badge>
-    </div>
+  <div class="dome-wrap-badge">
+    <p>基本用法</p>
+    <xly-badge value="new">
+      <xly-button>详情</xly-button>
+    </xly-badge>
+    <p>数字用法</p>
+    <xly-badge :value="100" :max="99" type="warning">
+      <xly-button>详情</xly-button>
+    </xly-badge>
+    <p>圆点用法</p>
+    <xly-badge isDot>
+      <xly-button>详情</xly-button>
+    </xly-badge>
+  </div>
 </template>
 <script>
 export default {
-    data() {
-        return {};
-    }
+  data() {
+    return {};
+  },
 };
 </script>
 ```

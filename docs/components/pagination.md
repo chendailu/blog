@@ -7,51 +7,6 @@ title: Pagination
 <br/>
 
 ### 基础用法
-
-<template>
-    <div class='dome-wrap-page'>
-        <p>默认用法</p>
-        <xly-pagination :currentPage='currentPage' :total='total' @current-change='handleCurrentPage' @size-change='handleSizeChange' :page-sizes='pageSizes' :page-size='pageSize' layout='pager, sizes, jumper, total'></xly-pagination>
-        <p>背景色填充</p>
-        <xly-pagination :currentPage='currentPage' :total='total' @current-change='handleCurrentPage' @size-change='handleSizeChange' :page-sizes='pageSizes' :page-size='pageSize' layout='pager, sizes, jumper, total' background></xly-pagination>
-        <p>默认用法 迷你版</p>
-        <xly-pagination :currentPage='currentPage' :total='total' @current-change='handleCurrentPage' @size-change='handleSizeChange' :page-sizes='pageSizes' :page-size='pageSize' layout='pager, sizes, jumper, total' small></xly-pagination>
-        <p>背景色填充 迷你版</p>
-        <xly-pagination :currentPage='currentPage' :total='total' @current-change='handleCurrentPage' @size-change='handleSizeChange' :page-sizes='pageSizes' :page-size='pageSize' layout='pager, sizes, jumper, total' background small></xly-pagination>
-        <p>左右布局</p>
-        <xly-pagination :currentPage='currentPage' :total='total' @current-change='handleCurrentPage' @size-change='handleSizeChange' :page-sizes='pageSizes' :page-size='pageSize' layout='pager, ->, total, jumper, sizes'></xly-pagination>
-    </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-            currentPage: 1,
-            total: 110,
-            pageSizes: [10, 20, 30],
-            pageSize: 10
-        }
-    },
-    methods: {
-        handleCurrentPage(val){
-            console.log('当前页',val)
-        },
-        handleSizeChange(val){
-            console.log('当前每页：', val)
-        }
-    }
-}
-</script>
-<style>
-    .dome-wrap-page{
-        padding-top: 20px;
-    }
-    .dome-wrap-page p{
-        margin: 10px 0;
-    }
-</style>
-
 ### 使用
 
 ```vue

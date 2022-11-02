@@ -6,41 +6,6 @@ pageClass: "xly-class"
 
 <br/>
 
-<template>
-<div>
-<h4>通知类</h4>
-    <xly-button style='margin-right:30px' @click='notice("enquire")'>通知</xly-button>
-    <xly-button type='success' style='margin-right:30px' @click='notice("success")'>通知</xly-button>
-    <xly-button type='warning' style='margin-right:30px' @click='notice("warning")'>通知</xly-button>
-    <xly-button type='danger' style='margin-right:30px' @click='notice("error")'>通知</xly-button>
-</div>
-</template> 
-
-<script>
-    export default {
-        methods:{
-            notice(val){
-                this.$messageNotice({
-                    //align:'right',
-                    type:val,
-                    title:'接入设备',
-                    content:'【希捷】WDC6589ASD898ADC658DC658DC658',
-                    controlMsg:'<span style="color:#2675ff;margin-right:10px">新建案例</span><span>对该设备进行操作</span>',
-                    controlClick:this.polic,
-                    //timeOut:2
-                }).then(()=>{
-                    console.log('ok')
-                }).catch(() => {
-                    console.log('no')
-                })
-            },
-            polic(){
-                alert('你要干哈')
-            }
-        }
-    }
-</script>
-
 ```vue
 <template>
 <div>

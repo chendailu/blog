@@ -36,40 +36,6 @@ title: Switch
 
 
 **基础用法**
- 
-<script>
-export default {
-  data() {
-    return {
-        value1: false,
-        value2: 123,
-        trueValue: 123,
-        falseValue: 456
-    }
-  }
-}
-</script>
-
-<template>
-    <div>
-        <xly-switch size="small" v-model="value1"></xly-switch>
-        <p>value: {{value1}}</p>
-        <xly-switch v-model="value2" :trueValue="trueValue" :falseValue="falseValue"></xly-switch>
-        <p>value: {{value2}}</p>
-        <xly-switch>
-            <span slot="open">开</span>
-            <span slot="close">关</span>
-        </xly-switch>
-        <xly-switch size="large">
-            <span slot="open">启动</span>
-            <span slot="close">停止</span>
-        </xly-switch>
-        <xly-switch size="large" disabled>
-            <span slot="open">启动</span>
-            <span slot="close">停止</span>
-        </xly-switch>
-    </div>
-</template>
 
 ***使用***
 

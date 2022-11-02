@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t}from"./app.f313fdc2.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/dropdown.md"}'),n={name:"components/dropdown.md"};function r(a,s,c,p,d,_){return t(),o("div")}const f=e(n,[["render",r]]);export{i as __pageData,f as default};

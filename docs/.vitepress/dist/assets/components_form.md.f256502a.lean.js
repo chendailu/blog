@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./app.f313fdc2.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/form.md"}'),r={name:"components/form.md"};function a(n,s,c,m,p,_){return o(),t("div")}const i=e(r,[["render",a]]);export{d as __pageData,i as default};

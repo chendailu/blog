@@ -1,0 +1,1 @@
+import{_ as e,c as t,o}from"./app.f313fdc2.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"components/icon.md"}'),n={name:"components/icon.md"};function c(a,r,s,p,i,_){return o(),t("div")}const f=e(n,[["render",c]]);export{d as __pageData,f as default};

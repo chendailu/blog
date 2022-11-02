@@ -15,15 +15,6 @@ title: tooltip
 | maxWidth  | Number | 无     | 最大宽度，超出自动换行                                                                                                   |
 
 # 示例
-
-<template>
-    <div style="padding-top: 40px;">
-        <xly-tooltip placement='right' content="展示完整内容">
-            tooltip
-        </xly-tooltip>
-    </div>
-</template>
-
 # 代码
 ```html
 <template>

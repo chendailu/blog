@@ -7,57 +7,6 @@ title: InputNumber
 <br/>
 
 ### 基础用法
-
-<template>
-    <div class='dome-wrap'>
-        <p>步数控制 step='1'</p>
-        <xly-input-number v-model='count1' :step='1' @change='handleChange' size='mini'></xly-input-number>
-        <br/>
-        <p>精度设置：precision='2'</p>
-        <xly-input-number v-model='count2' :precision='2'></xly-input-number>
-        <br/>
-        <p>控制器位置：control-position='right'</p>
-        <xly-input-number v-model='count3' control-position='right'></xly-input-number>
-        <br/>
-        <p>最大值和最小值设置：max='10' min='1'</p>
-        <xly-input-number v-model='count4' :min='1' :max='10'></xly-input-number>
-        <br/>
-        <p>取消控制器: control='false' </p>
-        <xly-input-number v-model='count5' :control='false'></xly-input-number>
-        <br/>
-        <p>禁用计数器: disabled </p>
-        <xly-input-number v-model='count6' disabled></xly-input-number>
-    </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-            count1: 1,
-            count2: 0,
-            count3: 0,
-            count4: 0,
-            count5: 0,
-            count6: 0
-        }
-    },
-    methods: {
-        handleChange(oldValue, newValue){
-        }
-    }
-}
-</script>
-<style>
-.dome-wrap >div{
-    margin-top: 20px;
-}
-.xly-input-number{
-    width: 300px;
-    margin-bottom: 20px;
-}
-</style>
-
 ### 使用
 
 ```vue

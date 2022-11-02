@@ -6,11 +6,6 @@ title: layout
 
 ## 基础用法
 
-<template>
-    <div>
-    <el-select> </el-select>
-    </div>
-</template>
 
 ```html
 <xly-row :gutter="20" type="flex" justify="center" algin="center">

@@ -42,32 +42,3 @@ title: Checkbox
 
 ## 基础用法
 
-<script>
-export default {
-    name: 'checkbox-single',
-    data() {
-        return {
-            value: false,
-            group: []
-        };
-    }
-}
-</script>
-
-<template>
-    <div>
-        <div>
-            <p></p>
-            <xly-checkbox v-model="value" indeterminate>single</xly-checkbox>
-            <p>value: {{value}}</p>
-        </div>
-        <div>
-            <xly-checkboxGroup v-model="group">
-                <xly-checkbox label="test1" indeterminate>test1</xly-checkbox>
-                <xly-checkbox label="test2" indeterminate>test2</xly-checkbox>
-                <xly-checkbox label="test3" disabled>test3</xly-checkbox>
-            </xly-checkboxGroup>
-            <p>checked: {{group}}</p>
-        </div>
-    </div>
-</template>

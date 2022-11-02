@@ -1,6 +1,6 @@
 ---
 title: breadcrumb
-pageClass: 'xly-class'
+pageClass: "xly-class"
 ---
 
 # 示例
@@ -8,27 +8,6 @@ pageClass: 'xly-class'
 <br/>
 
 ### 基础用法
-
-<template>
-<div>
-    <br/>
-    <h4>默认</h4>
-    <br/>
-    <xly-breadcrumb>
-        <xly-breadcrumb-item content='首页' to='/home' replace></xly-breadcrumb-item>
-        <xly-breadcrumb-item content='用户中心'></xly-breadcrumb-item>
-        <xly-breadcrumb-item content='用户列表'></xly-breadcrumb-item>
-    </xly-breadcrumb>
-    <br/>
-    <h4>带图标</h4>
-    <br/>
-    <xly-breadcrumb separator='>'>
-        <xly-breadcrumb-item content='首页' to='/home' icon='xly_icon_alert_line'></xly-breadcrumb-item>
-        <xly-breadcrumb-item content='用户中心' icon='xly_icon_mail_line'></xly-breadcrumb-item>
-        <xly-breadcrumb-item content='用户列表' icon='xly_icon_bill_line'></xly-breadcrumb-item>
-    </xly-breadcrumb>
-</div>
-</template>
 
 ```vue
 <div>

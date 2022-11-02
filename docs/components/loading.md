@@ -8,51 +8,6 @@ title: loading
 
 ### 基础用法
 
-<template>
-  <div class='dome-wrap'>
-      <div class='box1'>
-          <!-- <div class='box' v-loading.fullscreen='loading'></div> -->
-          <!-- <xly-button @click='handleLoading'>局部加载</xly-button>
-          <xly-button @click='handleServiceLoading'>全屏加载</xly-button> -->
-      </div>
-  </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-            loading: false
-        }
-    },
-    methods: {
-        // handleLoading(){
-        //   this.loading = true
-        //   setTimeout(()=>{
-        //     this.loading = false
-        //   }, 2000)
-        // },
-        // handleServiceLoading(){
-        //   let load = this.$loading()
-        //   setTimeout(()=>{
-        //     load.close()
-        //   }, 2000)
-        // }
-    }
-}
-</script>
-<style>
-.dome-wrap >.box1{
-    margin: 50px 0;
-}
-.box{
-  width: 200px;
-  height: 200px;
-  border: 1px solid;
-  background: #ccc;
-}
-</style>
-
 ### 使用
 
 ```vue

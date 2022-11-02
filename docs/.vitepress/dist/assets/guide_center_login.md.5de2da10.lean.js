@@ -1,0 +1,1 @@
+import{_ as s,c as a,o,d as l}from"./app.f313fdc2.js";const y=JSON.parse('{"title":"\u793A\u4F8B","description":"","frontmatter":{},"headers":[],"relativePath":"guide/center/login.md"}'),n={name:"guide/center/login.md"},e=l("",7),t=[e];function c(p,i,r,d,u,D){return o(),a("div",null,t)}const F=s(n,[["render",c]]);export{y as __pageData,F as default};

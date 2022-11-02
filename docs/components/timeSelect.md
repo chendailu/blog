@@ -7,61 +7,6 @@ title: TimeSelect
 <br/>
 
 ### 基础用法
-
-<template>
-    <div class='dome-wrap-time-picker'>
-        <p>默认用法</p>
-        <xly-time-select
-            v-model="value"
-            :picker-options="{
-                start: '08:30',
-                step: '00:15',
-                end: '18:30'
-            }"
-            placeholder="选择时间">
-        </xly-time-select>
-        <p>时间范围内选择</p>
-        <xly-time-select
-            placeholder="起始时间"
-            v-model="startTime"
-            :picker-options="{
-            start: '08:30',
-            step: '00:15',
-            end: '18:30'
-            }">
-        </xly-time-select>
-        <xly-time-select
-            placeholder="结束时间"
-            v-model="endTime"
-            :picker-options="{
-            start: '08:30',
-            step: '00:15',
-            end: '18:30',
-            minTime: startTime
-            }">
-        </xly-time-select>
-    </div>
-</template>
-
-<script>
-export default {
-    data() {
-        return {
-            value: '',
-            startTime:'',
-            endTime: ''
-        }
-    },
-    methods: {
-    }
-}
-</script>
-<style>
-    .dome-wrap-time-picker{
-        
-    }
-</style>
-
 ### 使用
 
 ```vue
